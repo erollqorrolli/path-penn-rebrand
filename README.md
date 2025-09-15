@@ -8,10 +8,10 @@ How to Run:
 
 Open index.html in browser.
 
-Files
-	•	index.html 
-	•	style.css 
+Files:
+		index.html, 
+		style.css 
 
-Attributions
+Attributions:
 
 Code mostly written by me, but I also used the help of ChatGPT for CSS help a bit.
