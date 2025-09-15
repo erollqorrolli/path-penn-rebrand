@@ -1,4 +1,4 @@
-/* --- Basic Setup & Fonts --- */
+/*  Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600;700&family=Sorts+Mill+Goudy&display=swap');
 
 body {
@@ -7,7 +7,7 @@ body {
     background-color: #ffffff;
 }
 
-/* --- Main Page Container --- */
+/*  Main Page Container  */
 .page-wrapper {
     width: 100%;
     max-width: 450px;
@@ -17,7 +17,7 @@ body {
     flex-direction: column;
 }
 
-/* --- Header --- */
+/*  Header  */
 .header {
     width: 100%;
     background-color: #ffffff;
@@ -72,7 +72,7 @@ body {
     background-position: right 0.5rem center;
 }
 
-/* --- Main Content Area --- */
+/*  Main Content Area  */
 .main-content {
     padding: 2rem 1.5rem;
     flex-grow: 1;
@@ -80,7 +80,7 @@ body {
     flex-direction: column;
 }
 
-/* --- Search Section --- */
+/*  Search Section  */
 .search-container {
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* --- Schedule Section --- */
+/*Schedule Section  */
 .schedule-wrapper {
     width: 75%;
     margin-left: auto;
@@ -207,7 +207,7 @@ body {
     z-index: 1;
 }
 
-/* --- Calendar Display --- */
+/*  Calendar Display  */
 .calendar-container {
     background-color: #ffffff;
     border-radius: 14px;
@@ -217,14 +217,14 @@ body {
 }
 
 .timeline-bar {
-    height: 20px; /* Adjusted height to match image proportions */
-    background-color: #003049; /* UPDATED: New blue hex code */
-    border-top-left-radius: 10px; /* Adjust as needed for curve */
-    border-top-right-radius: 10px; /* Adjust as needed for curve */
+    height: 20px; 
+    background-color: #003049; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 0.5rem;
-    /* Optional: Add a slight transform to make it more like a half-oval */
+    
     transform: scaleY(0.8) translateY(2px);
     transform-origin: bottom;
 }
