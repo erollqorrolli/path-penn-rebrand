@@ -6,7 +6,7 @@ course registration redesign
 
 How to Run:
 
-Open index.html in any modern browser. No extra setup needed.
+Open index.html in browser.
 
 Files
 	•	index.html 
