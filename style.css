@@ -1,0 +1,262 @@
+/* --- Basic Setup & Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600;700&family=Sorts+Mill+Goudy&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* --- Main Page Container --- */
+.page-wrapper {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header --- */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #990033;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.penn-logo-img {
+    height: 35px;
+    width: auto;
+}
+
+.penn-text {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2.2rem;
+    color: #01256E;
+    font-weight: 500;
+}
+
+.semester-select {
+    border: 1px solid #d1d1d1;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    position: relative;
+    padding-right: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+}
+
+/* --- Main Content Area --- */
+.main-content {
+    padding: 2rem 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Search Section --- */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+.search-bar {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    border-bottom: 4px solid #990033;
+    margin-bottom: 0.75rem;
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 0.3rem;
+    outline: none;
+    font-weight: 600;
+}
+
+.search-input::placeholder {
+    color: #888;
+    font-weight: 400;
+}
+
+.search-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.advanced-filters {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.search-button {
+    width: 55%;
+    background-color: #003049;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}
+
+/* --- Schedule Section --- */
+.schedule-wrapper {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f2f5;
+    border-radius: 18px;
+    padding: 1.25rem;
+    box-sizing: border-box;
+}
+
+.schedule-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 1rem 0;
+}
+
+.view-toggle {
+    display: flex;
+    background-color: #e4e6e9;
+    border-radius: 10px;
+    padding: 4px;
+    position: relative;
+    margin-bottom: -14px; 
+    z-index: 10; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.toggle-option {
+    flex: 1;
+    text-align: center;
+    padding: 0.35rem 0;
+    font-weight: 600;
+    color: #555;
+    z-index: 2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.toggle-option.active {
+    color: #111;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateX(100%);
+    z-index: 1;
+}
+
+/* --- Calendar Display --- */
+.calendar-container {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-bar {
+    height: 20px; /* Adjusted height to match image proportions */
+    background-color: #003049; /* UPDATED: New blue hex code */
+    border-top-left-radius: 10px; /* Adjust as needed for curve */
+    border-top-right-radius: 10px; /* Adjust as needed for curve */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0.5rem;
+    /* Optional: Add a slight transform to make it more like a half-oval */
+    transform: scaleY(0.8) translateY(2px);
+    transform-origin: bottom;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 18px);
+    gap: 0;
+    background-image: linear-gradient(to right, #e8e8e8 1px, transparent 1px);
+    background-size: calc(100% / 5) 100%;
+}
+
+.course-block {
+    background-color: #981E32;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+/* Grid positioning for each course */
+.cis-5120-1 { grid-column: 1 / 2; grid-row: 1 / 4; }
+.ese-2030-1 { grid-column: 2 / 3; grid-row: 4 / 9; }
+.cis-5120-2 { grid-column: 3 / 4; grid-row: 1 / 4; }
+.ese-2030-2 { grid-column: 4 / 5; grid-row: 4 / 9; }
+.cis-3200 { grid-column: 5 / 6; grid-row: 5 / 8; }
